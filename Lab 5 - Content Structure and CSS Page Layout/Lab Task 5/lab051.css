@@ -1,0 +1,88 @@
+/*
+File name: lab051.css
+Author: William Wei
+Created: 29/03/2023
+Last Modified: 30/03/2023
+Description: links to lab05.html
+*/
+
+*	{font-family: calabri, sans-serif;
+}
+
+/*The colour is dark slate grey*/
+*	{color:#2F4F4F;
+}
+
+h1	{
+	color:purple;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2	{
+	color:rgb(0,128,128);
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/*Q2*/
+aside, footer	{
+	font-style: italic;
+}
+
+/*Q3*/
+h1, h2, h3	{
+	font-family: arial, sans-serif;
+}
+
+/*Q4*/
+table, th, td	{
+	border: 1px solid black;
+}
+
+#images		{
+	text-align: center;
+}
+
+#deez		{
+	color:red;
+}
+
+.special	{
+	color: darkorange;
+	font-weight: bold;
+}
+
+.mon	{
+	text-align: right;
+}
+
+nav a	{
+	text-decoration:none;
+	padding:0.2em 0.6em;
+	border: 4px solid #ccc;
+}
+
+ol	{
+	list-style-type:lower-roman;
+}
+
+ul	{
+	list-style-type:square;
+}
+
+ol ul	{
+	list-style-type:square;
+}
+
+aside:hover	{
+	visibility:hidden;
+}
+
+nav a:hover	{
+	background-color:lightblue;
+	border-color:darkblue;
+}
+
+
+

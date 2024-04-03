@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />  
+  <meta name="description" content="JavaScript Basic" />
+  <meta name="keywords"    content="JS Basic" />
+  <meta name="author"      content="Son Nguyen" />
+  <title>Input and Output using Javascript</title>
+  <script src="io.js"></script>
+</head>
+<body>
+  <h1> Input and Output using paragraph </h1>
+  <p>Task 1: <span id="task1"></span></p>
+  <p>This is some text in a paragraph </p>
+  <p id="message"><button type="button" id="clickme"> Click Me! </button></p>
+  
+  <script>
+    function rewriteParagraph(userName) {
+      var message = document.getElementById("message");
+      message.innerHTML = "Hi " + userName + ", If you can see this , you have successfully overwritten the contents of this paragraph.Congrats!";
+    }
+
+    function promptName() {
+      var sName = prompt("Enter your name.\nThis prompt should show up when the\nClick Me Button is clicked.", "Your name");
+      alert("Hi there " + sName + ". Alert boxes are a quick way to check the state\nof your variables when you are developing code.");
+      rewriteParagraph(sName);
+    }
+
+    function writeNewMessage() {
+      var task1 = document.getElementById("task1");
+      task1.textContent = "You have now finished Task 1";
+    }
+
+    window.onload = function() {
+      var clickMe = document.getElementById("clickme");
+      clickMe.onclick = promptName;
+
+      var h1 = document.querySelector("h1");
+      h1.onclick = writeNewMessage;
+    }
+  </script>
+</body>
+</html>

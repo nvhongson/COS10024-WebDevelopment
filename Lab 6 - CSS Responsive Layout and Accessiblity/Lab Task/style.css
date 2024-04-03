@@ -1,0 +1,53 @@
+/* Page rendered red  */
+body {
+color: red;
+}
+/* Increase the font size in the form to 200% */
+form {
+    font-size: 200%;
+}
+
+/* Center the text for all <h1> elements */
+h1 {
+    text-align: center;
+}
+
+/* Change the font size of <h2> to 40 pixels */
+/* Remove the bottom margin of <h2> */
+h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+/* Make all the <input> elements occupy the entire width */
+input {
+    width: 100%;
+}
+
+/* Remove all margins around all <p> elements */
+p {
+    margin: 0;
+}
+
+/* Set width of all radio buttons to 15% */
+input[type="radio"] {
+    width: 15%;
+}
+
+/* Set width of all buttons to 40% */
+button,
+input[type="submit"] {
+    width: 40%;
+}
+
+/* Center the test button by centering the appropriate <div> */
+div {
+    text-align: center;
+}
+
+/* CSS rule to be added */
+@media screen and (min-width: 1024px) {
+body {
+font-size: 100%;
+}
+

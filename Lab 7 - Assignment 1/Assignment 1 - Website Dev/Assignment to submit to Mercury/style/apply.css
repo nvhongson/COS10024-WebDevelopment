@@ -1,0 +1,71 @@
+/* Change background color of body */
+body {
+  background-color: #f5f5dc;
+}
+
+/* Add a border and padding to the header */
+header {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
+
+/* Style the company name */
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+	text-align:center;
+	font-family: cursive
+}
+
+/* Style the company description */
+p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin: 20px 40px;
+  font-family: cursive
+}
+/* Add style to the menu */
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.center {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+hr.dashed {
+  border-top: 3px solid #bbb;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Job Application</title>
+  <meta name="description" content="Web Development">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Son Nguyen">
+  <meta name="viewport" content="width=device-width, initial-scale=0.55"/>
+  <link rel="stylesheet" type="text/css" href="assign1/style/apply.css">
+  <script src="apply.js" defer></script>
+</head>
+<header>
+		<h1>Ceylon Textile Suppliers</h1>
+		<nav>
+			<ul> 
+				<li class="above"><a href="https://mercury.swin.edu.au/cos10024/s103234103/assign1/homepage.html">Homepage</a></li>
+				<li class="above"><a href="https://mercury.swin.edu.au/cos10024/s103234103/assign1/jobs.html">Job Opportunity</a></li>
+				<li class="above"><a href="https://mercury.swin.edu.au/cos10024/s103234103/assign1/apply.html">Job Application</a></li>
+				<li class="above"><a href="https://mercury.swin.edu.au/cos10024/s103234103/assign1/about.html">About Me</a></li>
+				<li class="above"><a href="https://mercury.swin.edu.au/cos10024/s103234103/assign1/enhancements.html">Enhancements</a></li>
+				<li class="above"><a href="mailto:103234103@swin.edu.au">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<body>
+	<h1>Job Application Form</h1>
+	<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+		<fieldset>
+			<legend>Job Information</legend>
+			<label for="jobRef">Job Reference Number:</label>
+			<input type="text" id="jobRef" name="jobRef" pattern="[a-zA-Z0-9]{5}" required>
+		</fieldset>
+
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="firstName">First Name:</label>
+			<input type="text" id="firstName" name="firstName" maxlength="20" pattern="[a-zA-Z ]+" required><br><br>
+
+			<label for="lastName">Last Name:</label>
+			<input type="text" id="lastName" name="lastName" maxlength="20" pattern="[a-zA-Z ]+" required><br><br>
+
+			<label for="dob">Date of Birth:</label>
+			<input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" pattern="\d{2}\/\d{2}\/\d{4}" required><br><br>
+
+			<fieldset>
+				<legend>Gender:</legend>
+				<input type="radio" id="male" name="gender" value="male" required>
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female" required>
+				<label for="female">Female</label>
+				<input type="radio" id="other" name="gender" value="other" required>
+				<label for="other">Other</label>
+			</fieldset>
+
+			<label for="address">Street Address:</label>
+			<input type="text" id="address" name="address" maxlength="40" required><br><br>
+
+			<label for="suburb">Suburb/Town:</label>
+			<input type="text" id="suburb" name="suburb" maxlength="40" required><br><br>
+
+			<label for="state">State:</label>
+			<select id="state" name="state" required>
+				<option value="" disabled selected>Select State</option>
+				<option value="VIC">VIC</option>
+				<option value="NSW">NSW</option>
+				<option value="QLD">QLD</option>
+				<option value="NT">NT</option>
+				<option value="WA">WA</option>
+				<option value="SA">SA</option>
+				<option value="TAS">TAS</option>
+				<option value="ACT">ACT</option>
+			</select><br><br>
+
+			<label for="postcode">Postcode:</label>
+			<input type="text" id="postcode" name="postcode" pattern="\d{4}" required><br><br>
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" required><br><br>
+
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" required><br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Skills and Experience</legend>
+			<input type="checkbox" id = "teamwork" name="teamwork" value="teamwork">
+			<label for="teamwork"> Teamwork and Leadership</label> <br>
+
+			<input type="checkbox" id = "experience" name="experience" value="experience">
+			<label for="experience"> Experience in the field of choice</label> <br>
+
+			<input type="checkbox" id = "cooperation" name="cooperation" value="cooperation">
+			<label for="Cooperation"> Ability to follow and execute commands</label> <br>
+			
+			<label for="others"> Other Skills </label> 
+			<input type="text" id = "others" name="others" value="">
+			<br>
+			 <div style="text-align: center;">
+		<button type="submit">Submit</button>
+		
+</form>
+			<footer>
+		<p>&copy; 2023 Ceylon Textile Suppliers. All rights reserved.</p>
+	</footer>

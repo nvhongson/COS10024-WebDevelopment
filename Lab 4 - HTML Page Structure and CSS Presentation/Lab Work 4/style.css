@@ -1,0 +1,57 @@
+main 
+{
+	overflow: auto;
+}
+nav 
+{
+	height : 1cm;
+	line-height: 2 cm;
+	margin:20px 0px;
+}
+header, nav 
+{
+border-style: dotted;
+}
+article
+{
+float: left;
+width: 75%;
+border-style: dotted;
+}
+aside
+{
+float:right;
+width:20%;
+border-style:dotted;
+}
+footer
+{
+clear:both;
+border-style:dotted;
+margin-top: 20px;
+}
+ul
+{
+float:left;
+width:100%;
+padding:0;
+margin:0;	
+list-style-type:none;
+}
+a 
+{
+float:left;
+width:100%;
+text-decoration: none;
+colour:white;
+background-colour:blue;
+border-right: 1px solide white;
+}
+a:hover 
+{
+background color : #2288CC
+}
+header h1 
+{
+text-allign:center;
+}

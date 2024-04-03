@@ -1,0 +1,103 @@
+/* Change background color of body */
+body {
+  background-color: #f5f5dc;
+}
+
+/* Add a border and padding to the header */
+header {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
+
+/* Style the company name */
+h1 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+	text-align:center;
+	font-family: cursive
+}
+
+/* Style the company description */
+p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin: 20px;
+  font-family: cursive;
+}
+
+.slogan {
+  font-family: fantasy;
+}
+
+/* Add style to the menu */
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.center {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	animation-duration:3s;
+	animation-name:slidein;
+	animation-iteration-count: 2;
+	animation-direction:alternate;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Style the company name */
+  h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  /* Style the company description */
+  p {
+    margin: 20px 40px;
+  }
+
+  /* Add style to the menu */
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+}
